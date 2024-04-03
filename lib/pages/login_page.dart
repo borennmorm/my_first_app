@@ -4,7 +4,7 @@ import 'package:random_number/components/my_buttons.dart';
 import 'package:random_number/components/square_tile.dart';
 
 class LoginPage extends StatefulWidget {
-  LoginPage({super.key});
+  const LoginPage({super.key});
 
   @override
   State<LoginPage> createState() => _LoginPageState();
@@ -13,7 +13,7 @@ class LoginPage extends StatefulWidget {
 class _LoginPageState extends State<LoginPage> {
   // text editing controllers
   final usernameController = TextEditingController();
-  final TextEditingController passwordController = TextEditingController();
+  final passwordController = TextEditingController();
 
   // sign user in method
   void signUserIn() {

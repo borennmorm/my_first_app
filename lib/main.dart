@@ -3,18 +3,21 @@ import './pages/loading.dart';
 import './pages/home_page.dart';
 
 void main() {
-  runApp(MainApp());
+  runApp(const MainApp());
 }
 
 class MainApp extends StatelessWidget {
+  const MainApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'My App',
       initialRoute: '/loading',
       routes: {
-        '/loading': (context) => Loading(),
-        '/home': (context) => HomePage(),
+        '/loading': (context) => const Loading(),
+        '/home': (context) => const HomePage(),
       },
     );
   }
